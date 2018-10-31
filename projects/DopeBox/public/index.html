@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <title>DopeBox</title>
+	
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+	<link href="https://unpkg.com/ionicons@4.4.1/dist/css/ionicons.min.css" rel="stylesheet">
+
+  	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+  	<link rel="stylesheet" type="text/css" href="styles/animate.css">
+
+  	<script type="text/javascript" language="javascript" src="src/particles.min.js"></script>
+  	<script type="text/javascript" language="javascript" src="src/viewportchecker.js"></script>
+  	<script src="rellax.min.js"></script>
+  	
+
+
+</head>
+<body onload="updateCardWithData(0)" id="gradient">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" style="color: white">DopeBox</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>-->
+    </ul>
+  </div>
+</nav>
+<div id="particle-js"></div>
+<div class="container dedication-container">
+	<!--<div class="row special">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					Dedicate something
+				</div>
+				<div class="card-body">
+					<div class="input-group input-group-sm mb-3">
+  						<div class="input-group-prepend">
+    						<span class="input-group-text" id="inputGroup-sizing-sm">Your Name : </span>
+  						</div>
+  							<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" autocomplete="off" id="post_card_dedicated_by">
+					</div>
+					<div class="input-group input-group-sm mb-3">
+  						<div class="input-group-prepend">
+    					<span class="input-group-text" id="inputGroup-sizing-sm">Dedicated To : </span>
+  						</div>
+  						<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" autocomplete="off" id="post_card_dedicated_to">
+					</div>
+
+					<div class="row">
+					<div class="col-md-8 col-sm-8 col-8 col-xs-8">
+					<div class="dropdown show" style="z-index: 2;position: relative;">
+  						<span id="" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						Choose your song
+  						</span>
+
+  						<div class="dropdown-menu pull-right" style="z-index: 999;" aria-labelledby="dropdownMenuLink" id="post_card_song">
+    						<p class="text-center"><b>Hindi</b></p>
+    						<a class="dropdown-item" href="#">Chamiya Chamiya</a>
+    						<a class="dropdown-item" href="#">Humnava Mere</a>
+    						<a class="dropdown-item" href="#">Tera Yaar Hoon Mai</a>
+
+  							<div class="dropdown-divider"></div>
+    						<p class="text-center"><b>Bhojpuri</b></p>
+    						<a class="dropdown-item" href="#">Rinkiya ke papa</a>
+    						<a class="dropdown-item" href="#">Raja Raja Raja Koreja</a>
+    						<a class="dropdown-item" href="#">Spiderman tu ne churaya</a>
+
+  							<div class="dropdown-divider"></div>
+    						<p class="text-center"><b>English</b></p>
+    						<a class="dropdown-item" href="#">Bye Bye Bitch Bye Bye</a>
+    						<a class="dropdown-item" href="#">We don't talk anymore</a>
+    						<a class="dropdown-item" href="#">Sorry (Justin Bieber)</a>
+  						</div>
+
+					</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-4 col-xs-4">
+						<button class="btn btn-primary btn-block" onclick="postDedication()">Post</button>
+					</div>
+				</div>
+				</div>
+			</div>			
+		</div>		
+	</div>-->
+	<div class="row special">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					Write your heart out here...
+				</div>
+				<div class="card-body">					
+						<div class="row">
+							<div class="col-md-10 col-sm-8 col-xs-12 col-12">
+								<div class="input-group input-group-sm mb-3">
+						
+  									<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" autocomplete="off" id="post_card_dedicated_by" placeholder="What's your Full Name">
+  								</div>
+  							</div>
+  							<div class="col-md-2 col-sm-4 col-xs-12 col-12">
+  								<div class="dropdown show" style="z-index: 2;position: relative;">
+  									<span id="selected" class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    								Year
+  									</span>
+  									<div class="dropdown-menu pull-right" style="z-index: 999;" aria-labelledby="dropdownMenuLink" id="post_card_song">
+    									<a class="dropdown-item" href="#">1st</a>
+    									<a class="dropdown-item" href="#">2nd</a>
+    									<a class="dropdown-item" href="#">3rd</a>
+    									<a class="dropdown-item" href="#">4th</a>
+  									</div>
+								</div>
+  							</div>
+  						</div>
+
+					<div class="row">
+						<div class="col-12 col-md-12 col-sm-12">
+							<div class="input-group input-group-sm mb-3">
+  								<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" autocomplete="off" id="post_card_dedicated_by_title" placeholder="Mention the title of your post in 10 words">
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-bottom:10px;">
+						<div class="col-12 col-md-12 col-sm-12">
+							<div class="input-group">
+  								<textarea class="form-control" aria-label="With textarea" id="post_card_dedicated_by_content" autocomplete="off" placeholder="Your article here..."></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-sm-8 col-8"></div>
+							<div class="col-md-4 col-sm-4 col-4">
+								<button class="btn btn-primary btn-block" onclick="postDedication()">Post</button>
+							</div>
+					</div>
+				</div>
+			</div>			
+		</div>		
+	</div>
+</div>
+<!--
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header view_card_title"><b>'+currentPost.title+'</b></div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-10">
+                                <h6 class="view_card_dedicated_by"><b>'+currentPost.by+'</b></h6>
+                    </div>
+                    <div class="col-md-2">
+                    	<h6 class="view_card_dedicated_year">'+currentPost.year+' Year</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="view_card_dedicated_content">'+currentPost.content+'</h6>
+                    </div>
+                        <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-danger btn-block" id="'+currentPostKey+'" onclick="increaseDope(this.id)"><a class="view_card_dopes" id="child">'+currentPost.dopes+'</a><span style="display:inline-block; width: 1em;"></span>Dopes<span style="display:inline-block; width: 1em;"></span>
+                            <a class="icon ion-ios-flame" style="color: white; font-size: 1.3em;"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>-->
+<div class="container posts-container">
+	
+</div>
+
+
+
+<!--<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-storage.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+
+<script>
+
+  // Initialize firebase
+  var config = {
+    apiKey: "AIzaSyCbVoGpkNV_LCp--BPerHf2tKpPkG1aabg",
+    authDomain: "dopebox-5f408.firebaseapp.com",
+    databaseURL: "https://dopebox-5f408.firebaseio.com",
+    projectId: "dopebox-5f408",
+    storageBucket: "dopebox-5f408.appspot.com",
+    messagingSenderId: "354566331014"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script type="text/javascript" language="javascript" src="src/script.js"></script>
+
+
+
+</body>
+</html>

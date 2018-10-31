@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="canvas_clock.js"></script>
+	<title>Timings</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    Timings
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Canteen <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#Cafeteria">Cafeteria</a>
+      <a class="nav-item nav-link" href="#Residence">Residence</a>
+      <a class="nav-item nav-link" href="#ABD">Ashok Bhai Dokan</a>
+      <a class="nav-item nav-link" href="#lib">Library</a>
+      <a class="nav-item nav-link" href="#elib">E-Library</a>
+      <a class="nav-item nav-link" href="#icell">I-Cell</a>
+      <a class="nav-item nav-link" href="#accounts">Accounts Section</a>
+      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+    </div>
+  </div>
+</nav>
+
+<div style="background-color: black">
+ <div class="container-fluid"> 
+		<div class="row">
+			<div class="col-md-12">
+  					<div class="card-body text-center" style="background-color: black;">
+<!-- Trigger the modal with a button -->
+					<div class="row">
+					<div class="col-md-12">
+						<canvas id="clock6_" class="clock" width="400px" height="400px">
+    					</canvas>
+    				</div>
+    				</div>
+    				<div class="row">
+					<div class="col-md-12">
+    					<div style="padding-top: 0cm">
+							<h3 class="text-center" style="color: #FFFFFF;">How It Works?</h3>
+						</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-md-12">
+						<div class="text-center" style="padding-top: 0.5cm">
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button>
+						</div>
+
+<!-- Modal -->
+						<div style="padding-bottom: 1cm"></div>
+						<div id="myModal" class="modal fade" role="dialog">
+  						<div class="modal-dialog">
+   						<!-- Modal content-->
+    						<div class="modal-content">
+    							<div class="modal-header">
+                    <h4 class="modal-title">How It Works?</h4>
+     						  	<button type="button" class="close" data-dismiss="modal">&times;</button>
+      						</div>
+      						<div class="modal-body" style="text-align: left;">
+        						<p>
+        							<ul>
+        								<li>Go to the top of the page</li>
+        								<li>Select an option</li>
+        								<li>Do this</li>
+        							</ul>
+        						</p>
+        						<p>
+        							
+
+        							Note: This page is only concerned with the timings with respect to students
+        						</p>
+      						</div>
+      						</div>
+              <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+    				</div>
+    			</div>
+
+    		</div>
+    	</div>
+    		</div>
+    	</div>
+</div>
+</div>
+</div>
+
+<p></p>
+<div class="container" style="padding-top: 1cm;" >
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card mb-3" style="background-color: #32383e;">
+  					<div class="card-body" style="background-color: #32383E;">
+    					<h3 class="card-title" style="color: rgb(230,230,230);">Canteen Timings</h3>
+    					<p class="card-text" style="padding-top: 0.4cm">
+    						<h5 style="color: rgb(230,230,230);">Veg Canteen</h5>
+    					</p>
+    					<!-- <p class="card-text"><small class="text-muted">Last updated today</small></p> -->
+    					<div class="table-responsive">
+    					<table class="table table-striped table-dark">
+  							<thead>
+    							<tr>
+							    	<th scope="col"></th>
+		   				   			<th scope="col">7:30-10:00</th>
+					      			<th scope="col">10:00-11:15</th>
+      								<th scope="col">11:15-14:30</th>
+      								<th scope="col">14:30-20:30</th>
+      								<th scope="col">20:30-22:00</th>
+ 								</tr>
+  							</thead>
+  							<tbody>
+  								<tr>
+      								<th scope="row">Sunday</th>
+      								<td>Ghanta</td>
+      								<td>Bhuka mar</td>
+      								<td>Kauwa Biryani</td>
+									<td>So ja</td>
+      								<td>Kauwa bhujia</td>
+    							</tr>
+	    						<tr>
+    	  							<th scope="row">Monday</th>
+     		 						<td>Mark</td>
+      								<td>Otto</td>
+      								<td>@mdo</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+    							</tr>
+    							<tr>
+  	    							<th scope="row">Tuesday</th>
+	      							<td>Jacob</td>
+    								<td>Thornton</td>
+  	    							<td>@fat</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+    							</tr>
+    							<tr>
+   		   							<th scope="row">Wednesday</th>
+      								<td>Larry</td>
+      								<td>the Bird</td>
+      								<td>@twitter</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+    							</tr>
+    							<tr>	
+      								<th scope="row">Thursday</th>
+      								<td>Larry</td>
+	      							<td>the Bird</td>
+    	  							<td>@twitter</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+    							</tr>
+    							<tr>
+      								<th scope="row">Friday</th>
+      								<td>Larry</td>
+      								<td>the Bird</td>
+      								<td>@twitter</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+    							</tr>
+    							<tr>
+      								<th scope="row">Saturday</th>
+      								<td>Larry</td>
+      								<td>the Bird</td>
+      								<td>@twitter</td>
+									<td>the Bird</td>
+      								<td>@twitter</td>
+ 		   						</tr>
+  							</tbody>
+						</table>
+					</div>
+						<div>
+    					<p class="card-text" style="padding-top: 0.8cm">
+    						<h5 style="color: rgb(230,230,230);">Non-Veg Canteen</h5>
+    					</p>
+    					<!-- <p class="card-text"><small class="text-muted">Last updated today</small></p> -->
+    					<div>
+    						<div class="table-responsive">
+    							<table class="table table-striped table-dark">
+  								<thead>
+    								<tr>
+							    		<th scope="col"></th>
+			   				   			<th scope="col">7:30-10:00</th>
+						      			<th scope="col">10:00-11:15</th>
+      									<th scope="col">11:15-14:30</th>
+      									<th scope="col">14:30-20:30</th>
+      									<th scope="col">20:30-22:00</th>
+ 									</tr>
+  								</thead>
+  								<tbody>
+	  								<tr>
+	      								<th scope="row">Sunday</th>
+	      								<td>Ghanta</td>
+	      								<td>Bhuka mar</td>
+	      								<td>Kauwa Biryani</td>
+										<td>So ja</td>
+	      								<td>Kauwa bhujia</td>
+	    							</tr>
+		    						<tr>
+	    	  							<th scope="row">Monday</th>
+	     		 						<td>Mark</td>
+	      								<td>Otto</td>
+	      								<td>@mdo</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	    							</tr>
+	    							<tr>
+	  	    							<th scope="row">Tuesday</th>
+		      							<td>Jacob</td>
+	    								<td>Thornton</td>
+	  	    							<td>@fat</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	    							</tr>
+	    							<tr>
+	   		   							<th scope="row">Wednesday</th>
+	      								<td>Larry</td>
+	      								<td>the Bird</td>
+	      								<td>@twitter</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	    							</tr>
+	    							<tr>	
+	      								<th scope="row">Thursday</th>
+	      								<td>Larry</td>
+		      							<td>the Bird</td>
+	    	  							<td>@twitter</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	    							</tr>
+	    							<tr>
+	      								<th scope="row">Friday</th>
+	      								<td>Larry</td>
+	      								<td>the Bird</td>
+	      								<td>@twitter</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	    							</tr>
+	    							<tr>
+	      								<th scope="row">Saturday</th>
+	      								<td>Larry</td>
+	      								<td>the Bird</td>
+	      								<td>@twitter</td>
+										<td>the Bird</td>
+	      								<td>@twitter</td>
+	 		   						</tr>
+	  							</tbody>
+								</table>
+						
+						</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+<!-- </div> -->
+<p>
+	
+</p>
+<!-- <div class="container"> -->
+	<div class="row" style="padding-top: 0.5cm;">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="Cafeteria">
+  				<div class="card-body">
+    				<h5 class="card-header text-center" style="color: rgb(230,230,230);">Cafeteria Timings</h5>
+    				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opening time: 11:00</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closing time: 19:00</p>
+    				<p class="card-text"><small class="text-muted">Note: Open from 23:00 to 00:00 during exams under notice</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+<p>
+	
+</p>
+<!-- <div class="container"> -->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="Residence">
+  				<div class="card-body">
+    				<h5 class="card-header text-center" style="color: rgb(230,230,230);"> Silicon Residence Timings</h5>
+    				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opens at: 5:30</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closes at: 22:00</p>
+    				<p class="card-text"><small class="text-muted">Note: Visitors are only allowed at specific times of the day</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+<p></p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="ABD">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">Ashok Bhai Dokan Timings</h5>
+	   				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opening time: 10:00 (Depends on Ashok Bhai himself)</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closing time: 22:00</p>
+    				<p class="card-text"><small class="text-muted">Note: Closed on Sundays</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+<p></p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="gates">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">College Gate Entry & Timings</h5>
+	   				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Gate 1</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Gate 2</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Gate 3</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Gate 4</p>
+    				<p class="card-text"><small class="text-muted">Note: Enter text</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+<p></p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="lib">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">Silicon Library Timings</h5>
+	   				<p></p>
+    				<table class="table table-striped table-dark">
+  						<thead>
+    						<tr>
+							    <th scope="col">Days</th>
+		   				   		<th scope="col">Timing</th>
+					      	</tr>
+  						</thead>
+  						<tbody>
+  							<tr>
+      							<th scope="row">Monday to Saturday</th>
+      							<td>8:00 to 21:00</td>
+      						</tr>
+      						<tr>
+      							<th scope="row">Sundays & Holidays (non Exam Days)</th>
+      							<td>9:30 to 13:30</td>
+      						</tr>
+      						<tr>
+      							<th scope="row">Sundays & Holidays (Exam Days)</th>
+      							<td>9:30 to 17:00</td>
+      						</tr>
+      					</tbody>
+      				</table>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+<p></p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="elib">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">E-Library Timings</h5>
+	   				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opening time: 9:00</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closing time: 20:30</p>
+    				<p class="card-text"><small class="text-muted">Note: Closed on Sundays</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+<p></p>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="icell">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">I-Cell Timings</h5>
+	   				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opening time: 8:00</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closing time: 20:30</p>
+    				<p class="card-text"><small class="text-muted">Note: Type</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+<p></p>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-3" style="background-color: #32383E;" id="accounts">
+  				<div class="card-body">
+   					<h5 class="card-header text-center" style="color: rgb(230,230,230);">Accounts Section Timings</h5>
+	   				<p></p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Opening time: 8:00</p>
+    				<p class="card-text text-center" style="color: rgb(250,250,250);"> Closing time: 20:30</p>
+    				<p class="card-text"><small class="text-muted">Note: Type</small></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script>
+	clockd6_={
+              "indicate": true,
+              "indicate_color": "#FFFFFF",
+              "dial1_color": "#FF1F00",
+              "dial2_color": "#FF5A00",
+              "dial3_color": "#FF9100",
+              "time_add": 1,
+              "time_add_color": "#eee",
+              "time_24h": true,
+              "timeoffset":0,
+              "date_add":3,
+              "date_add_color": "#ddd",
+             };
+
+var c = document.getElementById('clock6_');
+cns1_ = c.getContext('2d');
+clock_circles(365,cns1_,clockd6_);
+
+</script>
+
+</body>
+</html>
