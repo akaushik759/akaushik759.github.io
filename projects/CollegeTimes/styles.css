@@ -3,10 +3,30 @@
         width: 250px;
         height: 250px;
       }
+      .footer{
+        font-size: 3.5vw;
+      }
 }
     @media only screen and (min-width: 590px) {
     #clock6_ {
       width: 400px;
       height: 400px;
     }
+    .footer{
+        font-size: 1vw;
+      }
+}
+    .footer {
+   position: relative;
+   overflow: hidden;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   background-color: #343a40;
+   color: white;
+   padding-top: 5px;
+   padding-bottom: 10px;
+   height: 90px;
+   text-align: center;
 }
