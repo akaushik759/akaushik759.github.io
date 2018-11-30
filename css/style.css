@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: white;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
@@ -189,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-content h2 span {
   color: #22fff2;
-  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
