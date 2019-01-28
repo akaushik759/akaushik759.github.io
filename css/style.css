@@ -650,7 +650,69 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
 }
+/* Perks Section
+--------------------------------*/
+#perks {
+  padding: 60px 0 30px 0;
+}
 
+#perks .perks-img {
+  overflow: hidden;
+}
+
+#perks .perks-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #perks .perks-img {
+    height: auto;
+  }
+  #perks .perks-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#perks .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: 'Overpass', sans-serif;
+}
+
+#perks .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#perks .content p {
+  line-height: 26px;
+}
+
+#perks .content p:last-child {
+  margin-bottom: 0;
+}
+
+#perks .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#perks .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#perks .content ul li {
+  color: #c4c4c7;
+  padding-bottom: 10px;
+}
 /* Clients Section
 --------------------------------*/
 #clients {
