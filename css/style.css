@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 body {
   background: #121217;
-  color: #444;
   font-family: 'Poiret One', cursive;
 }
 
@@ -582,6 +581,30 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .section-header p {
   color: #c4c4c7;
 }
+
+#services .btn-projects {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+#services .btn-projects {
+  background: #0c2e8a;
+  border: 2px solid #0c2e8a;
+}
+
+#services .btn-projects:hover {
+  background: #2ba69e;
+  color: white;
+}
+
 #services .box {
   padding: 40px;
   margin-bottom: 40px;
@@ -814,6 +837,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #testimonials {
   padding: 30px 0;
+  color: white;
 }
 
 #testimonials .section-header p {
@@ -824,7 +848,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
   text-align: center;
-  min-height: 350px;
+  min-height: 100px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -850,7 +874,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #FFFFFF;
   margin: 0;
 }
 
